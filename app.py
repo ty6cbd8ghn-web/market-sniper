@@ -1,6 +1,14 @@
-\import streamlit as st
+import streamlit as st
 import yfinance as yf
 import pandas as pd
+import nltk
+from nltk.sentiment.vader import SentimentIntensityAnalyzer
+from transformers import pipeline
+import plotly.express as px
+import time
+
+nltk.download('vader_lexicon')
+
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 from transformers import pipeline
 import plotly.express as px
